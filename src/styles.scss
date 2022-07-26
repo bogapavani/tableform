@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "~ng-select/ng-select/themes/default.theme.css";
+
+.form-button {
+    text-align: right;
+
+    button {
+        margin-left: 10px;
+    }
+}
+.table-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
