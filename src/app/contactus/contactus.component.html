@@ -1,0 +1,71 @@
+<div>
+    <img src="	https://mccormick.widen.net/content/fpcuegusjo/original/headerother70contactus1200x400px.jpg">
+</div>
+<div>
+    <h3>Have a question about one of our products or our site?</h3>
+    <p>Search our FAQ’s below. If this is an urgent matter, or if you need immediate assistance, please call us at
+        1-888-878-3663 (M-F 9am-7pm EST).</p>
+
+</div>
+<form [formGroup]="contactusForm" class="form">
+    <label>* Email Address</label><br>
+    <div>
+        <input type="text" formControlName="email">
+        <div *ngIf="f.email.touched && f.email.invalid">
+            <div *ngIf="f.email.errors.required" class="error-text">Email is required</div>
+            <div *ngIf="f.email.errors.email" class="error-text">Email is invalid</div>
+
+        </div>
+    </div><br>
+
+    <label>* Confirm Email Address</label><br>
+    <div>
+        <input type="text" formControlName="Confirmemail">
+        <div *ngIf="f.Confirmemail.touched && f.Confirmemail.invalid">
+            <div *ngIf="f.Confirmemail.errors.required" class="error-text">Email is required</div>
+            <div *ngIf="f.Confirmemail.errors.email" class="error-text">Confirm Email is invalid</div>
+
+        </div>
+    </div><br>
+    <label>* Product Name</label><br>
+    <div>
+        <input type="text" formControlName="productName">
+        <div *ngIf="f.productName.touched && f.productName.invalid">
+            <div *ngIf="f.productName.errors.required" class="error-text">Product Name is required</div>
+            <!-- <div *ngIf="f.productName.errors.email" class="error-text">Confirm Email is invalid</div> -->
+
+        </div>
+    </div><br>
+    <label>* UPC</label><br>
+    <div>
+        <input type="text" formControlName="upc">
+        <div *ngIf="f.upc.touched && f.upc.invalid">
+            <div *ngIf="f.upc.errors.required" class="error-text">Product Name is required</div>
+            <!-- <div *ngIf="f.productName.errors.email" class="error-text">Confirm Email is invalid</div> -->
+
+        </div>
+    </div><br>
+    <label>* Best By/Date Code</label><br>
+    <div>
+        <input type="text" formControlName="code">
+        <div *ngIf="f.code.touched && f.code.invalid">
+            <div *ngIf="f.code.errors.required" class="error-text">Best By/Date Code is required</div>
+            <!-- <div *ngIf="f.productName.errors.email" class="error-text">Confirm Email is invalid</div> -->
+
+        </div>
+    </div><br>
+    <label>* Comments</label><br>
+    <div>
+        <textarea type="text" formControlName="comments"></textarea>
+        <div *ngIf="f.comments.touched && f.comments.invalid">
+            <div *ngIf="f.comments.errors.required" class="error-text">Best By/Date Code is required</div>
+            <!-- <div *ngIf="f.productName.errors.email" class="error-text">Confirm Email is invalid</div> -->
+
+        </div>
+    </div><br>
+    
+  
+
+
+
+</form>   
